@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-user-graduate"></i> Formulario de Inscripción</h1>
+        <form id="registrationForm">
+            <h2><i class="fas fa-book"></i> Selecciona tu carrera</h2>
+            <label for="career"><i class="fas fa-graduation-cap"></i> Carrera</label>
+            <select id="career" name="career" required>
+                <option>Administración de Empresas</option>
+                <option>Bacteriología</option>
+                <option>Contaduría Pública</option>
+                <option>Derecho</option>
+                <option>Enfermería</option>
+                <option>Ingeniería de Sistemas</option>
+                <option>Instrumentación Quirúrgica - Cartagena</option>
+                <option>Licenciatura en Educación Infantil</option>
+                <option>Medicina</option>
+                <option>Odontología</option>
+                <option>Tecnología en Atención Prehospitalaria</option>
+                <option>Tecnología en Estética y Cosmetología</option>
+                <option>Tecnología en Mecánica Dental</option>
+                <option>Trabajo Social</option>
+            </select>
+
+            <h2><i class="fas fa-user"></i> Información Personal</h2>
+            <div class="grid">
+                <div>
+                    <label for="firstName"><i class="fas fa-id-card"></i> Primer Nombre</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div>
+                    <label for="middleName"><i class="fas fa-id-card"></i> Segundo Nombre</label>
+                    <input type="text" id="middleName" name="middleName">
+                </div>
+                <div>
+                    <label for="lastName"><i class="fas fa-id-card"></i> Primer Apellido</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div>
+                    <label for="secondLastName"><i class="fas fa-id-card"></i> Segundo Apellido</label>
+                    <input type="text" id="secondLastName" name="secondLastName">
+                </div>
+                <div>
+                    <label for="birthDate">Fecha de Nacimiento</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+                <div>
+                    <label for="documentType">Tipo de Documento</label>
+                    <select id="documentType" name="documentType" required>
+                        <option value="CC">Cédula de Ciudadanía</option>
+                        <option value="TI">Tarjeta de Identidad</option>
+                        <option value="CE">Cédula de Extranjería</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="documentNumber">Número de Documento</label>
+                    <input type="text" id="documentNumber" name="documentNumber" required>
+                </div>
+                <div>
+                    <label for="biologicalSex">Sexo Biológico</label>
+                    <select id="biologicalSex" name="biologicalSex" required>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="maritalStatus">Estado Civil</label>
+                    <select id="maritalStatus" name="maritalStatus" required>
+                        <option value="Soltero">Soltero/a</option>
+                        <option value="Casado">Casado/a</option>
+                        <option value="Unión libre">Unión libre</option>
+                        <option value="Divorciado">Divorciado/a</option>
+                        <option value="Viudo">Viudo/a</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone"><i class="fas fa-phone"></i> Teléfono</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="cellPhone">Celular</label>
+                    <input type="text" id="cellPhone" name="cellPhone" required>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-wheelchair"></i> ¿Tienes alguna discapacidad?</h2>
+            <label for="disability"><i class="fas fa-question-circle"></i> Selecciona una opción</label>
+            <select id="disability" name="disability">
+                <option value="Ninguna">Ninguna</option>
+                <option value="Discapacidad Motriz">Discapacidad Motriz</option>
+                <option value="Discapacidad Cognitiva">Discapacidad Cognitiva</option>
+                <option value="Discapacidad Motriz">Discapacidad sorda</option>
+                <option value="Discapacidad Motriz">Trastorno de la voz y el habla</option>
+                <option value="Discapacidad Motriz">Sordoceguera</option>
+                <option value="Otra">Otra</option>
+            </select>
+            <input type="text" id="otherDisability" name="otherDisability" placeholder="Especifica tu discapacidad" style="display: none;">
+
+                     <!-- DIRECCION RECIDENCIAL -->
+                     <h3>Dirección Residencial</h3>
+                     <label for="country">País</label>
+                     <input type="text" id="country" name="country" required>
+         
+                     <label for="city">Ciudad</label>
+                     <input type="text" id="city" name="city" required>
+         
+                     <label for="address">Dirección</label>
+                     <input type="text" id="address" name="address" required>
+
+
+                       <!-- ENCUESTA PERSONAL -->
+            <h2><i class="fas fa-clipboard-list"></i> Encuesta Personal</h2>
+            <label><i class="fas fa-child"></i>¿Tiene usted hijos?</label>
+            <div>
+                <input type="radio" name="children" value="No tengo" required>No tengo
+                <input type="radio" name="children" value="1 hijo">1 hijo
+                <input type="radio" name="children" value="2 hijos">2 hijos
+                <input type="radio" name="children" value="3 hijos">3 hijos
+                <input type="radio" name="children" value="Más de 4 hijos">Más de 4 hijos
+            </div>
+
+            <label><i class="fas fa-users"></i>¿Se reconoce como parte de alguna de las siguientes poblaciones?</label>
+            <div class="options">
+                <input type="checkbox" name="population" value="Ninguna">Ninguna
+                <input type="checkbox" name="population" value="Indígenas">Indígenas
+                <input type="checkbox" name="population" value="Afrocolombianos">Afrocolombianos
+                <input type="checkbox" name="population" value="Raizales">Raizales
+                <input type="checkbox" name="population" value="Pueblo ROM o Gitano">Pueblo ROM o Gitano
+            </div>
+
+            <label><i class="fas fa-briefcase"></i>¿Usted trabaja actualmente?</label>
+            <div>
+                <input type="radio" name="employment" value="No estoy trabajando" required>No estoy trabajando
+                <input type="radio" name="employment" value="Sí, empleado">Sí, empleado
+                <input type="radio" name="employment" value="Sí, independiente">Sí, independiente
+            </div>
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
